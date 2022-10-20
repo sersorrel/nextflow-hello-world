@@ -1,8 +1,8 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/./master/nextflow_schema.json",
-    "title": ". pipeline parameters",
-    "description": "",
+    "$id": "https://raw.githubusercontent.com/sersorrel/nextflow-hello-world/main/nextflow_schema.json",
+    "title": "nextflow-hello-world pipeline parameters",
+    "description": "hello, nextflow!",
     "type": "object",
     "properties": {
         "to": {
