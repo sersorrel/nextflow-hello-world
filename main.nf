@@ -1,7 +1,5 @@
 #!/usr/bin/env nextflow
 
-params.to = "World"
-
 process HELLO {
 	input:
 	val thing
