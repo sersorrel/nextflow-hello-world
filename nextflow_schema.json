@@ -4,12 +4,25 @@
     "title": "nextflow-hello-world pipeline parameters",
     "description": "hello, nextflow!",
     "type": "object",
-    "properties": {
-        "to": {
-            "type": "string",
-            "default": "world",
-            "fa_icon": "fas fa-user",
-            "description": "Who to greet"
+    "definitions": {
+        "parameters": {
+            "title": "Parameters",
+            "type": "object",
+            "description": "things you can customise",
+            "default": "",
+            "properties": {
+                "to": {
+                    "type": "string",
+                    "default": "world",
+                    "fa_icon": "fas fa-user",
+                    "description": "Who to greet"
+                }
+            }
         }
-    }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/parameters"
+        }
+    ]
 }
